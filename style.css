@@ -14,21 +14,33 @@
 body {
     height: 100vh;
     background: rgb(29, 24, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: rgb(191, 188, 219);
     font-size: 20vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     filter: drop-shadow(6px 3px 4px rgba(147, 144, 182, 1))
         drop-shadow(8px 12px 4px rgba(147, 144, 182, 0.75))
         drop-shadow(10px 20px 4px rgba(147, 144, 182, 0.5))
         drop-shadow(12px 28px 4px rgba(147, 144, 182, 0.25))
         drop-shadow(14px 36px 4px rgba(147, 144, 182, 0.1));
-    /* animation: _ 0s infinite; */
+
+    transition: 0.1s ease-in all;
+}
+
+h1:hover {
+    filter: drop-shadow(3px 4px 4px rgba(147, 144, 182, 1))
+        drop-shadow(3px 14px 4px rgba(147, 144, 182, 0.75))
+        drop-shadow(3px 24px 4px rgba(147, 144, 182, 0.5))
+        drop-shadow(3px 34px 4px rgba(147, 144, 182, 0.25))
+        drop-shadow(3px 44px 4px rgba(147, 144, 182, 0.1));
+}
+
+.animation {
+    animation: _ 4s;
 }
 
 .monospace {
@@ -38,17 +50,20 @@ h1 {
     font-family: "Ms Madi", cursive;
 }
 
-/* @keyframes _ {
+@keyframes _ {
     0% {
-        transform: translate(-50%, -50%);
+        transform: translate(0, 0);
     }
     25% {
-        transform: translate(-50.5%, -50%);
+        transform: rotate(-1deg) translateX(-20px) translateY(-12px);
+    }
+    50% {
+        transform: rotate(0) translate(0);
     }
     75% {
-        transform: translate(-49.5%, -50%);
+        transform: rotate(1deg) translateX(20px) translateY(-12px);
     }
     100% {
-        transform: translate(-50%, -50%);
+        transform: rotate(0) translate(0);
     }
-} */
+}
