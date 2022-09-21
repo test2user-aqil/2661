@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Roboto+Mono&display=swap");
+
+/**
+ * font-family: 'Ms Madi', cursive;
+ * font-family: 'Roboto Mono', monospace;
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(29, 24, 36);
+}
+
+h1 {
+    color: rgb(191, 188, 219);
+    font-size: 20vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(6px 3px 4px rgba(147, 144, 182, 1))
+        drop-shadow(8px 12px 4px rgba(147, 144, 182, 0.75))
+        drop-shadow(10px 20px 4px rgba(147, 144, 182, 0.5))
+        drop-shadow(12px 28px 4px rgba(147, 144, 182, 0.25))
+        drop-shadow(14px 36px 4px rgba(147, 144, 182, 0.1));
+    /* animation: _ 0s infinite; */
+}
+
+.monospace {
+    font-family: "Roboto Mono", monospace;
+}
+.cursive {
+    font-family: "Ms Madi", cursive;
+}
+
+/* @keyframes _ {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        transform: translate(-50.5%, -50%);
+    }
+    75% {
+        transform: translate(-49.5%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+} */
