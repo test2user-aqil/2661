@@ -41,6 +41,7 @@ h1:hover {
 
 .animation {
     animation: _ 4s;
+    animation-delay: 1s;
 }
 
 .monospace {
