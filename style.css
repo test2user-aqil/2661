@@ -1,10 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Roboto+Mono&display=swap");
-
-/**
- * font-family: 'Ms Madi', cursive;
- * font-family: 'Roboto Mono', monospace;
- */
-
 * {
     padding: 0;
     margin: 0;
@@ -13,58 +6,16 @@
 
 body {
     height: 100vh;
-    background: rgb(29, 24, 36);
+    background: rgb(3, 3, 6);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    user-select: none;
 }
 
 h1 {
-    color: rgb(191, 188, 219);
+    color: rgb(204, 204, 253);
     font-size: 20vh;
-    filter: drop-shadow(6px 3px 4px rgba(147, 144, 182, 1))
-        drop-shadow(8px 12px 4px rgba(147, 144, 182, 0.75))
-        drop-shadow(10px 20px 4px rgba(147, 144, 182, 0.5))
-        drop-shadow(12px 28px 4px rgba(147, 144, 182, 0.25))
-        drop-shadow(14px 36px 4px rgba(147, 144, 182, 0.1));
-
-    transition: 0.1s ease-in all;
-}
-
-h1:hover {
-    filter: drop-shadow(3px 4px 4px rgba(147, 144, 182, 1))
-        drop-shadow(3px 14px 4px rgba(147, 144, 182, 0.75))
-        drop-shadow(3px 24px 4px rgba(147, 144, 182, 0.5))
-        drop-shadow(3px 34px 4px rgba(147, 144, 182, 0.25))
-        drop-shadow(3px 44px 4px rgba(147, 144, 182, 0.1));
-}
-
-.animation {
-    animation: _ 4s;
-    animation-delay: 1s;
-}
-
-.monospace {
-    font-family: "Roboto Mono", monospace;
-}
-.cursive {
-    font-family: "Ms Madi", cursive;
-}
-
-@keyframes _ {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: rotate(-1deg) translateX(-20px) translateY(-12px);
-    }
-    50% {
-        transform: rotate(0) translate(0);
-    }
-    75% {
-        transform: rotate(1deg) translateX(20px) translateY(-12px);
-    }
-    100% {
-        transform: rotate(0) translate(0);
-    }
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
