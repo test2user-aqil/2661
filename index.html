@@ -13,9 +13,13 @@
         <script>
             const h = document.querySelector("#h");
 
-            setTimeout(() => {
-                h.innerHTML = 2661;
-            }, 2000);
+            setInterval(() => {
+                if (h.innerHTML === "2661") {
+                    h.innerHTML = "0041";
+                } else {
+                    h.innerHTML = "2661";
+                }
+            }, 1500);
         </script>
     </body>
 </html>

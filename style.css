@@ -1,3 +1,7 @@
+:root {
+    --i: 0;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,4 +22,6 @@ h1 {
     color: rgb(204, 204, 253);
     font-size: 20vh;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    display: flex;
+    flex-direction: row;
 }
