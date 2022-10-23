@@ -37,6 +37,16 @@ h2 {
     animation: glow 3.5s infinite;
 }
 
+h3 {
+    position: absolute;
+    color: rgb(16, 37, 60);
+    top: 40px;
+    font-weight: 400;
+    font-size: 6vh;
+    animation: wolg 3.5s infinite;
+    animation-delay: 0.3s;
+}
+
 @font-face {
     font-family: "Old London";
     src: url("./OldLondon.ttf");
@@ -62,5 +72,14 @@ h2 {
     }
     40% {
         color: rgb(16, 37, 60);
+    }
+}
+
+@keyframes wolg {
+    0% {
+        color: rgb(16, 37, 60);
+    }
+    40% {
+        color: rgb(205, 205, 236);
     }
 }
