@@ -39,7 +39,7 @@ h2 {
 
 h3 {
     position: absolute;
-    color: rgb(16, 37, 60);
+    color: rgb(205, 205, 236);
     top: 40px;
     font-weight: 400;
     font-size: 6vh;
@@ -77,9 +77,15 @@ h3 {
 
 @keyframes wolg {
     0% {
-        color: rgb(16, 37, 60);
+        opacity: 0;
     }
     40% {
-        color: rgb(205, 205, 236);
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
     }
 }
