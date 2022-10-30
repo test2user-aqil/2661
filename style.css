@@ -68,10 +68,10 @@ h3 {
 
 @keyframes glow {
     0% {
-        color: rgb(205, 205, 236);
+        opacity: 1;
     }
     40% {
-        color: rgb(16, 37, 60);
+        opacity: 0;
     }
 }
 
@@ -85,7 +85,7 @@ h3 {
     65% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 0;
     }
 }
