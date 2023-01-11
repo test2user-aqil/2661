@@ -8,43 +8,25 @@ body {
     height: 100vh;
     background: linear-gradient(
         109.6deg,
-        rgb(36, 45, 57) 11.2%,
+        rgb(27, 34, 43) 11.2%,
         rgb(16, 37, 60) 51.2%,
         rgb(0, 0, 0) 98.6%
     );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     user-select: none;
     font-family: "Old London", serif;
     gap: 4rem;
 }
 
 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
     color: rgb(205, 205, 236);
-    font-size: 25vh;
+    font-size: 40vh;
     font-weight: 400;
     letter-spacing: 0;
-    transform: translateY(-30px);
-    animation: glow 3.5s infinite;
-}
-
-h2 {
-    color: rgb(205, 205, 236);
-    font-weight: 400;
-    font-size: 10vh;
-    animation: glow 3.5s infinite;
-}
-
-h3 {
-    position: absolute;
-    color: rgb(205, 205, 236);
-    top: 40px;
-    font-weight: 400;
-    font-size: 6vh;
-    animation: wolg 3.5s infinite;
-    animation-delay: 0.3s;
+    filter: drop-shadow(0 0 0.8rem rgb(0, 0, 0));
 }
 
 @font-face {
@@ -53,39 +35,7 @@ h3 {
 }
 
 @media only screen and (max-width: 700px) {
-    body {
-        flex-direction: column;
-    }
-
     h1 {
         font-size: 20vh;
-    }
-
-    h2 {
-        font-size: 8vh;
-    }
-}
-
-@keyframes glow {
-    0% {
-        opacity: 1;
-    }
-    40% {
-        opacity: 0;
-    }
-}
-
-@keyframes wolg {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-    }
-    65% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
     }
 }
